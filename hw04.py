@@ -9,7 +9,24 @@ secret_word = "food"
 
 # Task 1
 def check_text():
-    """ Add your docstring """
+    """ Ask for a sentence until it contrains the secret word, dog, or Dog. """
+    while True:
+        #Get a sentence from the user.
+        text = input("Give me a sentence: ")
+        
+        #check if the sentence contains the secret word
+        if secret_word in text:
+            print("You used the secret word!")
+            break
+        else:
+            #check for dog or Dog if the secret word was not found
+            if "dog" in text or "Dog" in text:
+                print("You used the work \'dog\' or the word \'Dog\' !")
+                break
+            
+            else:
+                #Repeat if neither condition is true
+                print("Try again")
     pass
 
 
