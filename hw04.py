@@ -78,10 +78,12 @@ def my_for_loop():
     
     #returning if the string is too short/long
     if len(text) < 2 or len(text) > 5:
+        print("bad word")
         return
     
     #Return if space
     if " " in text:
+        print ("bad word")
         return
     
     #checking vowels and consonants
@@ -95,23 +97,22 @@ def my_for_loop():
 def my_while_loop():
     """Repeat a menu until the user chooses to return or exit."""
     while True:
-        # Ask the user to choose an option.
         choice = input("Choose one option: a, b, or c: ")
 
-        # If the user chooses a, repeat the menu.
+        # If a, repeat the menu.
         if choice == "a":
             continue
         else:
-            # If the user chooses b, print Goodbye and return.
+            # If b, print Goodbye and return.
             if choice == "b":
                 print("Goodbye")
                 return
             else:
-                # If the user chooses c, exit the program.
+                # If c, exit the program.
                 if choice == "c":
                     sys.exit()
                 else:
-                    # Handle an invalid choice.
+                    #invalid choice.
                     print("try again")
 
 # ---------------------------------------
