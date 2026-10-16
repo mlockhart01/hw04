@@ -32,8 +32,23 @@ def check_text():
 
 # Task 2
 def check_greater():
-    """ Add your docstring """
-    pass
+    """ Ask for 2 inteegers until they are not equal, then print which is greater. """
+    while True:
+        #Ask for 2 integers
+        first = int(input("Give me a first integer: "))
+        second = int(input("Give me a second integer: "))
+        
+        #Comparing the 2
+        if first > second:
+            print("First is Greater")
+            break
+        else:
+            if second > first:
+                print("Second is Greater")
+                break
+            else:
+                #asking for new if they are equal
+                print("Try again")
 
 
 
