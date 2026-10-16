@@ -21,7 +21,7 @@ def check_text():
         else:
             #check for dog or Dog if the secret word was not found
             if "dog" in text or "Dog" in text:
-                print("You used the work \'dog\' or the word \'Dog\' !")
+                print("You used the work \"dog\" or the word \"Dog\" !")
                 break
             
             else:
