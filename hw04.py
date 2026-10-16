@@ -1,7 +1,7 @@
 # ------------------------------------------------------
-#        Name: (put your name here)
+#        Name: Malia Lockhart
 #       Peers: (add any collaborators)
-#  References: (anything you checked to solve this)
+#  References: Textbook and lecture notes
 # ------------------------------------------------------
 import sys
 
@@ -54,8 +54,21 @@ def check_greater():
 
 # Task 3
 def get_special_numbers():
-    """ Add your docstring """
-    pass
+    """ Print odd numbers from 1 to 40 that are multiples of 3 but not 5. """
+    #Loop through the numebrs
+    for number in range (1, 41):
+        #skip even numbers
+        if number % 2 == 0:
+            continue
+        
+        #Skip numbers not multiple of 3
+        if number %3 !=0:
+            continue
+        
+        #skip multiples of 5
+        if number % 5 == 0:
+            continue
+        print(number)
 
 
 # Task 4.a
