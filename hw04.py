@@ -93,8 +93,26 @@ def my_for_loop():
 
 # Task 4.b
 def my_while_loop():
-    """ Add your docstring """
-    pass
+    """Repeat a menu until the user chooses to return or exit."""
+    while True:
+        # Ask the user to choose an option.
+        choice = input("Choose one option: a, b, or c: ")
+
+        # If the user chooses a, repeat the menu.
+        if choice == "a":
+            continue
+        else:
+            # If the user chooses b, print Goodbye and return.
+            if choice == "b":
+                print("Goodbye")
+                return
+            else:
+                # If the user chooses c, exit the program.
+                if choice == "c":
+                    sys.exit()
+                else:
+                    # Handle an invalid choice.
+                    print("try again")
 
 # ---------------------------------------
 # Do not modify anything below this line
