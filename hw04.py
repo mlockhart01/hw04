@@ -73,8 +73,23 @@ def get_special_numbers():
 
 # Task 4.a
 def my_for_loop():
-    """ Add your docstring """
-    pass
+    """ Chack a short string and print whether each characteris a vowel or a consonant. """
+    text = input("Give me a string: ")
+    
+    #returning if the string is too short/long
+    if len(text) < 2 or len(text) > 5:
+        return
+    
+    #Return if space
+    if " " in text:
+        return
+    
+    #checking vowels and consonants
+    for letter in text:
+        if letter.lower() in "aeiou":
+            print(f"{letter} is a vowel")   
+        else:
+            print(f"{letter} is a consonant")
 
 # Task 4.b
 def my_while_loop():
